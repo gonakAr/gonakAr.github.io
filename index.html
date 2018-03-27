@@ -108,19 +108,19 @@
 					<div>
 						<div class="row">
 							<div class="12u">
-								<form>
+								<form onsubmit="enviarMensaje(); return false;">
 									<div>
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<input type="text" name="name" id="name" placeholder="Nombre" />
 											</div>
 											<div class="6u 12u(mobile)">
-												<input type="text" name="email" id="email" placeholder="Email" />
+												<input type="text" name="email" id="email" placeholder="Email" required/>
 											</div>
 										</div>
 										<div class="row">
 											<div class="6u 12u(mobile)">
-												<input type="text" name="subject" id="subject" placeholder="Asunto" />
+												<input type="text" name="subject" id="subject" placeholder="Asunto" required/>
 											</div>
 											<div class="6u 12u(mobile)">
 												<input type="text" name="phone" id="phone" placeholder="Teléfono" />
@@ -128,13 +128,13 @@
 										</div>
 										<div class="row">
 											<div class="12u">
-												<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+												<textarea name="message" id="message" placeholder="Mensaje" required></textarea>
 											</div>
 										</div>
 										<div class="row 200%">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" value="Enviar" onclick="enviarMensaje(); return false; " /></li>
+													<li><input type="submit" value="Enviar" /></li>
 													<li><input type="reset" value="Limpiar" class="alt" /></li>
 												</ul>
 											</div>
